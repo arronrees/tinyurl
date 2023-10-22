@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  padding: 4rem;
+}
+
+.new__url {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.new__url p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.new__url > div form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.new__url > div form input {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid rgb(205, 237, 249);
+}
+
+.new__url > div form button {
+  appearance: none;
+  background-color: rgb(211, 249, 255);
+  border: 1px solid rgb(172, 233, 244);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.url__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.url__list > div:first-of-type {
+  border: none;
+  font-weight: bold;
+}
+
+.url__list > div {
+  border-radius: 4px;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 10rem 1fr 4rem;
+}
+
+.url__list > div p {
+  word-break: break-word;
+}
+
+.url__list > div button {
+  appearance: none;
+  background-color: rgb(255, 211, 211);
+  border: 1px solid rgb(244, 172, 172);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.url__list > div button:hover {
+  background: rgb(244, 172, 172);
+}
